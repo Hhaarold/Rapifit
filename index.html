@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapifit | Comida Rápida Saludable y Sostenible</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'rapifit-green': '#27ae60', // Strong Green
+                        'rapifit-dark': '#2c3e50',  // Dark Text
+                        'rapifit-accent': '#e67e22', // Orange Accent
+                        'rapifit-light': '#f0fdf4', // Light Background
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <!-- Load Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Load Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-rapifit-light font-sans text-rapifit-dark">
+
+    <!-- Header & Hero Section -->
+    <header class="bg-white shadow-lg">
+        <div class="container mx-auto px-4 py-6 flex justify-between items-center max-w-7xl">
+            <h1 class="text-3xl font-bold text-rapifit-green">Rapifit</h1>
+            <nav class="hidden md:flex space-x-6 text-lg font-medium">
+                <a href="#propuesta" class="text-rapifit-dark hover:text-rapifit-accent transition duration-200">Propuesta</a>
+                <a href="#producto" class="text-rapifit-dark hover:text-rapifit-accent transition duration-200">Producto</a>
+                <a href="#finanzas" class="text-rapifit-dark hover:text-rapifit-accent transition duration-200">Finanzas</a>
+                <a href="#equipo" class="text-rapifit-dark hover:text-rapifit-accent transition duration-200">Equipo</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section (Simplified to single column) -->
+    <section class="py-20 md:py-32" id="hero">
+        <div class="container mx-auto px-4 max-w-4xl text-center">
+            <!-- Text Content -->
+            <div class="space-y-6">
+                <span class="inline-block bg-rapifit-accent text-white text-sm font-semibold px-4 py-1 rounded-full shadow-md">
+                    Proyecto de Empresarismo
+                </span>
+                <h2 class="text-6xl md:text-7xl font-extrabold leading-tight text-rapifit-dark">
+                    Comida Rápida, <span class="text-rapifit-green">Realmente Saludable.</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Rapifit transforma el concepto de fast food, ofreciendo opciones gourmet con ingredientes frescos y naturales, perfectas para tu ritmo de vida.
+                </p>
+                <a href="#producto" class="inline-block bg-rapifit-green text-white font-bold text-lg px-8 py-3 rounded-xl shadow-lg hover:shadow-xl hover:bg-green-600 transition duration-300">
+                    ¡Descubre la Rapifit Burger!
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem & Solution Section (Slide 2) -->
+    <section class="py-20 bg-white" id="propuesta">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <h3 class="text-4xl font-bold text-center mb-12 text-rapifit-dark">Contexto: El Dilema y Nuestra Solución</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Problem -->
+                <div class="bg-red-50 p-8 rounded-xl border-l-8 border-red-500 shadow-md">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <i data-lucide="triangle-alert" class="w-8 h-8 text-red-500"></i>
+                        <h4 class="text-2xl font-semibold text-rapifit-dark">El Problema</h4>
+                    </div>
+                    <p class="text-lg text-gray-700">El mercado actual ofrece dos extremos: "comida chatarra" económica y rápida (pero nociva) o comida saludable que es costosa y lenta de preparar. Estudiantes y trabajadores luchan por comer bien.</p>
+                </div>
+                <!-- Solution -->
+                <div class="bg-rapifit-light p-8 rounded-xl border-l-8 border-rapifit-green shadow-md">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <i data-lucide="carrot" class="w-8 h-8 text-rapifit-green"></i>
+                        <h4 class="text-2xl font-semibold text-rapifit-dark">La Solución: Rapifit</h4>
+                    </div>
+                    <p class="text-lg text-gray-700">Rapifit rompe este esquema ofreciendo hamburguesas gourmet saludables con ingredientes frescos y pan integral, a un precio competitivo y con la velocidad del fast food tradicional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Features Section (Slide 3) -->
+    <section class="py-20" id="producto">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <h3 class="text-4xl font-bold text-center mb-12 text-rapifit-dark">Nuestra Hamburguesa: Calidad Artesanal</h3>
+
+            <!-- Grid adjusted to be text-only on one column for mobile, or two columns on desktop -->
+            <div class="grid md:grid-cols-2 gap-12 items-start"> 
+                <!-- Text Content Column 1 (was image placeholder) -->
+                <div class="p-6 bg-white rounded-xl shadow-lg space-y-4">
+                    <h4 class="text-2xl font-semibold text-rapifit-accent">Compromiso en cada bocado</h4>
+                    <p class="text-xl font-medium text-gray-600">
+                        Cada ingrediente es seleccionado para ofrecer el máximo sabor sin sacrificar la salud. La preparación es rápida, pero la calidad es gourmet.
+                    </p>
+                    <p class="text-lg text-gray-500">
+                        *Hamburguesa estándar de 150g de carne magra.
+                    </p>
+                </div>
+                <!-- Text Content Column 2 (list) -->
+                <div class="space-y-6">
+                    <p class="text-xl font-medium text-gray-600 border-l-4 border-rapifit-accent pl-4">
+                        Detalle de los componentes de Rapifit Burger:
+                    </p>
+                    <ul class="space-y-4 text-lg">
+                        <li class="flex items-start">
+                            <i data-lucide="wheat" class="w-6 h-6 text-rapifit-green mr-3 mt-1 flex-shrink-0"></i>
+                            <strong>Pan 100% Integral:</strong> Alto en fibra y sin azúcares añadidos.
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="beef" class="w-6 h-6 text-rapifit-green mr-3 mt-1 flex-shrink-0"></i>
+                            <strong>Carne Magra:</strong> Selección premium baja en grasa, jugosa y sabrosa.
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="salad" class="w-6 h-6 text-rapifit-green mr-3 mt-1 flex-shrink-0"></i>
+                            <strong>Vegetales Frescos:</strong> Directos del mercado: lechuga crespa, tomate chonto y cebolla roja.
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="milk" class="w-6 h-6 text-rapifit-green mr-3 mt-1 flex-shrink-0"></i>
+                            <strong>Salsas Saludables:</strong> Base de yogurt griego natural para un sabor cremoso y ligero.
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="package" class="w-6 h-6 text-rapifit-green mr-3 mt-1 flex-shrink-0"></i>
+                            <strong>Empaque Eco:</strong> Totalmente biodegradable, cuidamos el planeta.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Financial Summary Section (Slides 4, 5, 8) -->
+    <section class="py-20 bg-gray-100" id="finanzas">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <h3 class="text-4xl font-bold text-center mb-12 text-rapifit-dark">Viabilidad Financiera</h3>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <!-- Card 1: Costo Variable -->
+                <div class="bg-white p-8 rounded-xl shadow-xl border-t-4 border-rapifit-accent text-center">
+                    <i data-lucide="shopping-bag" class="w-10 h-10 text-rapifit-accent mx-auto mb-4"></i>
+                    <p class="text-xl font-medium text-gray-600">Costo Variable Unitario</p>
+                    <p class="text-4xl font-extrabold text-rapifit-dark mt-2">$13,350 <span class="text-lg font-normal">COP</span></p>
+                    <p class="text-sm text-gray-500 mt-2">Costo total de ingredientes y empaque por hamburguesa.</p>
+                </div>
+                <!-- Card 2: Precio de Venta -->
+                <div class="bg-white p-8 rounded-xl shadow-xl border-t-4 border-rapifit-green text-center">
+                    <i data-lucide="dollar-sign" class="w-10 h-10 text-rapifit-green mx-auto mb-4"></i>
+                    <p class="text-xl font-medium text-gray-600">Precio de Venta (PV)</p>
+                    <p class="text-4xl font-extrabold text-rapifit-dark mt-2">$26,000 <span class="text-lg font-normal">COP</span></p>
+                    <p class="text-sm text-gray-500 mt-2">Competitivo y accesible, asegurando un margen de contribución.</p>
+                </div>
+                <!-- Card 3: Margen de Contribución -->
+                <div class="bg-white p-8 rounded-xl shadow-xl border-t-4 border-rapifit-accent text-center">
+                    <i data-lucide="line-chart" class="w-10 h-10 text-rapifit-accent mx-auto mb-4"></i>
+                    <p class="text-xl font-medium text-gray-600">Margen de Contribución (MC)</p>
+                    <p class="text-4xl font-extrabold text-rapifit-dark mt-2">$12,650 <span class="text-lg font-normal">COP</span></p>
+                    <p class="text-sm text-gray-500 mt-2">Diferencia entre PV y Costo Variable por unidad.</p>
+                </div>
+            </div>
+
+            <!-- Break Even Point -->
+            <div class="bg-rapifit-dark p-10 rounded-2xl text-white shadow-2xl text-center">
+                <h4 class="text-3xl font-bold mb-4">Punto de Equilibrio (PE)</h4>
+                <div class="grid md:grid-cols-3 gap-6 items-center">
+                    <div>
+                        <p class="text-xl font-medium text-gray-300">Costos Fijos Mensuales</p>
+                        <p class="text-4xl font-extrabold text-rapifit-accent">$3,500,000</p>
+                    </div>
+                    <div class="flex flex-col items-center justify-center">
+                        <i data-lucide="gauge" class="w-12 h-12 text-rapifit-green mb-2"></i>
+                        <p class="text-4xl font-extrabold leading-none">277</p>
+                        <p class="text-xl font-medium text-gray-300">Hamburguesas al mes</p>
+                    </div>
+                    <div>
+                        <p class="text-xl font-medium text-gray-300">Meta Diaria (28 días)</p>
+                        <p class="text-4xl font-extrabold text-rapifit-accent">~10</p>
+                        <p class="text-xl font-medium text-gray-300">Hamburguesas / Día</p>
+                    </div>
+                </div>
+                <p class="mt-6 text-lg font-semibold text-rapifit-green">Conclusión: El negocio es viable con una meta de ventas baja y alcanzable.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustainability Section (Slide 9) -->
+    <section class="py-20" id="sostenibilidad">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <!-- Grid adjusted to be text-only on one column for mobile, or two columns on desktop -->
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+                <!-- Text Content Column 1 (was image placeholder) -->
+                <div class="p-6 bg-rapifit-light rounded-xl shadow-lg space-y-4 border-l-4 border-rapifit-green">
+                    <h3 class="text-3xl font-bold text-rapifit-green">Compromiso Ambiental</h3>
+                    <h4 class="text-2xl font-semibold text-rapifit-dark">Más allá de la comida</h4>
+                    <p class="text-lg text-gray-700">Rapifit no solo cuida tu cuerpo, también cuida el planeta. Es por eso que utilizamos empaques 100% biodegradables hechos de fibra de caña de azúcar.</p>
+                </div>
+                <!-- Text Content Column 2 (detail) -->
+                <div class="space-y-6">
+                    <p class="text-lg text-gray-700">
+                        Cada envase se descompone de forma natural, reduciendo el impacto de nuestros residuos. Esto nos permite diferenciarnos y atraer a un segmento de mercado consciente.
+                    </p>
+                    <div class="p-4 bg-rapifit-accent/10 rounded-lg">
+                        <p class="text-lg text-gray-700 font-bold flex items-center">
+                            <i data-lucide="recycle" class="w-6 h-6 text-rapifit-accent mr-3 flex-shrink-0"></i>
+                            Modelo de Sostenibilidad Rentable:
+                        </p>
+                        <p class="ml-9 text-gray-700">El costo del empaque ecológico ($1,000 COP) está incluido en la estructura de costos variables para asegurar que la sostenibilidad sea parte integral del modelo de negocio y siga siendo viable.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section (Slide 10) -->
+    <section class="py-20 bg-rapifit-dark text-white" id="equipo">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <h3 class="text-4xl font-bold text-center mb-12 text-rapifit-green">Equipo Emprendedor</h3>
+            <p class="text-center text-lg mb-10">Estudiantes de 3er Semestre - Empresarismo</p>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <!-- Team Member 1 - Felipe Alzate -->
+                <div class="text-center">
+                    <div class="w-32 h-32 rounded-full mx-auto mb-4 flex items-center justify-center bg-rapifit-accent border-4 border-white shadow-lg text-4xl font-extrabold">
+                        FA
+                    </div>
+                    <p class="text-xl font-semibold">Felipe Alzate</p>
+                    <p class="text-rapifit-green">Gestión Operativa</p>
+                </div>
+                <!-- Team Member 2 - Harold -->
+                <div class="text-center">
+                    <div class="w-32 h-32 rounded-full mx-auto mb-4 flex items-center justify-center bg-rapifit-accent border-4 border-white shadow-lg text-4xl font-extrabold">
+                        H
+                    </div>
+                    <p class="text-xl font-semibold">Harold</p>
+                    <p class="text-rapifit-green">Desarrollo de Producto</p>
+                </div>
+                <!-- Team Member 3 - Jilber -->
+                <div class="text-center">
+                    <div class="w-32 h-32 rounded-full mx-auto mb-4 flex items-center justify-center bg-rapifit-accent border-4 border-white shadow-lg text-4xl font-extrabold">
+                        J
+                    </div>
+                    <p class="text-xl font-semibold">Jilber</p>
+                    <p class="text-rapifit-green">Finanzas y Estrategia</p>
+                </div>
+                <!-- Team Member 4 - Willington -->
+                 <div class="text-center">
+                    <div class="w-32 h-32 rounded-full mx-auto mb-4 flex items-center justify-center bg-rapifit-accent border-4 border-white shadow-lg text-4xl font-extrabold">
+                        W
+                    </div>
+                    <p class="text-xl font-semibold">Willington</p>
+                    <p class="text-rapifit-green">Logística y Distribución</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-200 py-8">
+        <div class="container mx-auto px-4 max-w-7xl text-center text-gray-600">
+            <p>&copy; 2025 Rapifit. Todos los derechos reservados.</p>
+            <p class="mt-2">Proyecto de Empresarismo para la materia de Gestión Financiera.</p>
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
